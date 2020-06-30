@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DVC Plot</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.10.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.8.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.5.1"></script>
+</head>
+<body>
+    <div id = "plot0"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "index": 0,
+        "precision": 0.021473008227975116,
+        "recall": 1.0,
+        "rev": "HEAD",
+        "threshold": 0.0
+    },
+    {
+        "index": 1,
+        "precision": 0.07519379844961241,
+        "recall": 0.9065420560747663,
+        "rev": "HEAD",
+        "threshold": 0.02
+    },
+    {
+        "index": 2,
+        "precision": 0.1694290976058932,
+        "recall": 0.8598130841121495,
+        "rev": "HEAD",
+        "threshold": 0.04
+    },
+    {
+        "index": 3,
+        "precision": 0.2670807453416149,
+        "recall": 0.8037383177570093,
+        "rev": "HEAD",
+        "threshold": 0.06
+    },
+    {
+        "index": 4,
+        "precision": 0.3253012048192771,
+        "recall": 0.7570093457943925,
+        "rev": "HEAD",
+        "threshold": 0.08
+    },
+    {
+        "index": 5,
+        "precision": 0.3827751196172249,
+        "recall": 0.7476635514018691,
+        "rev": "HEAD",
+        "threshold": 0.1
+    },
+    {
+        "index": 6,
+        "precision": 0.4175824175824176,
+        "recall": 0.7102803738317757,
+        "rev": "HEAD",
+        "threshold": 0.12
+    },
+    {
+        "index": 7,
+        "precision": 0.4805194805194805,
+        "recall": 0.6915887850467289,
+        "rev": "HEAD",
+        "threshold": 0.14
+    },
+    {
+        "index": 8,
+        "precision": 0.5503875968992248,
+        "recall": 0.6635514018691588,
+        "rev": "HEAD",
+        "threshold": 0.16
+    },
+    {
+        "index": 9,
+        "precision": 0.5737704918032787,
+        "recall": 0.6542056074766355,
+        "rev": "HEAD",
+        "threshold": 0.18
+    },
+    {
+        "index": 10,
+        "precision": 0.6090909090909091,
+        "recall": 0.6261682242990654,
+        "rev": "HEAD",
+        "threshold": 0.2
+    },
+    {
+        "index": 11,
+        "precision": 0.6595744680851063,
+        "recall": 0.5794392523364486,
+        "rev": "HEAD",
+        "threshold": 0.22
+    },
+    {
+        "index": 12,
+        "precision": 0.6781609195402298,
+        "recall": 0.5514018691588785,
+        "rev": "HEAD",
+        "threshold": 0.24
+    },
+    {
+        "index": 13,
+        "precision": 0.7027027027027027,
+        "recall": 0.48598130841121495,
+        "rev": "HEAD",
+        "threshold": 0.26
+    },
+    {
+        "index": 14,
+        "precision": 0.7205882352941176,
+        "recall": 0.45794392523364486,
+        "rev": "HEAD",
+        "threshold": 0.28
+    },
+    {
+        "index": 15,
+        "precision": 0.7377049180327869,
+        "recall": 0.4205607476635514,
+        "rev": "HEAD",
+        "threshold": 0.3
+    },
+    {
+        "index": 16,
+        "precision": 0.7450980392156863,
+        "recall": 0.35514018691588783,
+        "rev": "HEAD",
+        "threshold": 0.32
+    },
+    {
+        "index": 17,
+        "precision": 0.7674418604651163,
+        "recall": 0.308411214953271,
+        "rev": "HEAD",
+        "threshold": 0.34
+    },
+    {
+        "index": 18,
+        "precision": 0.8571428571428571,
+        "recall": 0.2803738317757009,
+        "rev": "HEAD",
+        "threshold": 0.36
+    },
+    {
+        "index": 19,
+        "precision": 0.8846153846153846,
+        "recall": 0.21495327102803738,
+        "rev": "HEAD",
+        "threshold": 0.38
+    },
+    {
+        "index": 20,
+        "precision": 0.9090909090909091,
+        "recall": 0.18691588785046728,
+        "rev": "HEAD",
+        "threshold": 0.4
+    },
+    {
+        "index": 21,
+        "precision": 1.0,
+        "recall": 0.1308411214953271,
+        "rev": "HEAD",
+        "threshold": 0.42
+    },
+    {
+        "index": 22,
+        "precision": 1.0,
+        "recall": 0.09345794392523364,
+        "rev": "HEAD",
+        "threshold": 0.44
+    },
+    {
+        "index": 23,
+        "precision": 1.0,
+        "recall": 0.056074766355140186,
+        "rev": "HEAD",
+        "threshold": 0.48
+    },
+    {
+        "index": 24,
+        "precision": 1.0,
+        "recall": 0.04672897196261682,
+        "rev": "HEAD",
+        "threshold": 0.58
+    },
+    {
+        "index": 25,
+        "precision": 1.0,
+        "recall": 0.037383177570093455,
+        "rev": "HEAD",
+        "threshold": 0.6
+    },
+    {
+        "index": 26,
+        "precision": 1.0,
+        "recall": 0.028037383177570093,
+        "rev": "HEAD",
+        "threshold": 0.62
+    },
+    {
+        "index": 27,
+        "precision": 1.0,
+        "recall": 0.009345794392523364,
+        "rev": "HEAD",
+        "threshold": 0.64
+    },
+    {
+        "index": 0,
+        "precision": 0.021473008227975116,
+        "recall": 1.0,
+        "rev": "workspace",
+        "threshold": 0.0
+    },
+    {
+        "index": 1,
+        "precision": 0.07519379844961241,
+        "recall": 0.9065420560747663,
+        "rev": "workspace",
+        "threshold": 0.02
+    },
+    {
+        "index": 2,
+        "precision": 0.1694290976058932,
+        "recall": 0.8598130841121495,
+        "rev": "workspace",
+        "threshold": 0.04
+    },
+    {
+        "index": 3,
+        "precision": 0.2670807453416149,
+        "recall": 0.8037383177570093,
+        "rev": "workspace",
+        "threshold": 0.06
+    },
+    {
+        "index": 4,
+        "precision": 0.3253012048192771,
+        "recall": 0.7570093457943925,
+        "rev": "workspace",
+        "threshold": 0.08
+    },
+    {
+        "index": 5,
+        "precision": 0.3827751196172249,
+        "recall": 0.7476635514018691,
+        "rev": "workspace",
+        "threshold": 0.1
+    },
+    {
+        "index": 6,
+        "precision": 0.4175824175824176,
+        "recall": 0.7102803738317757,
+        "rev": "workspace",
+        "threshold": 0.12
+    },
+    {
+        "index": 7,
+        "precision": 0.4805194805194805,
+        "recall": 0.6915887850467289,
+        "rev": "workspace",
+        "threshold": 0.14
+    },
+    {
+        "index": 8,
+        "precision": 0.5503875968992248,
+        "recall": 0.6635514018691588,
+        "rev": "workspace",
+        "threshold": 0.16
+    },
+    {
+        "index": 9,
+        "precision": 0.5737704918032787,
+        "recall": 0.6542056074766355,
+        "rev": "workspace",
+        "threshold": 0.18
+    },
+    {
+        "index": 10,
+        "precision": 0.6090909090909091,
+        "recall": 0.6261682242990654,
+        "rev": "workspace",
+        "threshold": 0.2
+    },
+    {
+        "index": 11,
+        "precision": 0.6595744680851063,
+        "recall": 0.5794392523364486,
+        "rev": "workspace",
+        "threshold": 0.22
+    },
+    {
+        "index": 12,
+        "precision": 0.6781609195402298,
+        "recall": 0.5514018691588785,
+        "rev": "workspace",
+        "threshold": 0.24
+    },
+    {
+        "index": 13,
+        "precision": 0.7027027027027027,
+        "recall": 0.48598130841121495,
+        "rev": "workspace",
+        "threshold": 0.26
+    },
+    {
+        "index": 14,
+        "precision": 0.7205882352941176,
+        "recall": 0.45794392523364486,
+        "rev": "workspace",
+        "threshold": 0.28
+    },
+    {
+        "index": 15,
+        "precision": 0.7377049180327869,
+        "recall": 0.4205607476635514,
+        "rev": "workspace",
+        "threshold": 0.3
+    },
+    {
+        "index": 16,
+        "precision": 0.7450980392156863,
+        "recall": 0.35514018691588783,
+        "rev": "workspace",
+        "threshold": 0.32
+    },
+    {
+        "index": 17,
+        "precision": 0.7674418604651163,
+        "recall": 0.308411214953271,
+        "rev": "workspace",
+        "threshold": 0.34
+    },
+    {
+        "index": 18,
+        "precision": 0.8571428571428571,
+        "recall": 0.2803738317757009,
+        "rev": "workspace",
+        "threshold": 0.36
+    },
+    {
+        "index": 19,
+        "precision": 0.8846153846153846,
+        "recall": 0.21495327102803738,
+        "rev": "workspace",
+        "threshold": 0.38
+    },
+    {
+        "index": 20,
+        "precision": 0.9090909090909091,
+        "recall": 0.18691588785046728,
+        "rev": "workspace",
+        "threshold": 0.4
+    },
+    {
+        "index": 21,
+        "precision": 1.0,
+        "recall": 0.1308411214953271,
+        "rev": "workspace",
+        "threshold": 0.42
+    },
+    {
+        "index": 22,
+        "precision": 1.0,
+        "recall": 0.09345794392523364,
+        "rev": "workspace",
+        "threshold": 0.44
+    },
+    {
+        "index": 23,
+        "precision": 1.0,
+        "recall": 0.056074766355140186,
+        "rev": "workspace",
+        "threshold": 0.48
+    },
+    {
+        "index": 24,
+        "precision": 1.0,
+        "recall": 0.04672897196261682,
+        "rev": "workspace",
+        "threshold": 0.58
+    },
+    {
+        "index": 25,
+        "precision": 1.0,
+        "recall": 0.037383177570093455,
+        "rev": "workspace",
+        "threshold": 0.6
+    },
+    {
+        "index": 26,
+        "precision": 1.0,
+        "recall": 0.028037383177570093,
+        "rev": "workspace",
+        "threshold": 0.62
+    },
+    {
+        "index": 27,
+        "precision": 1.0,
+        "recall": 0.009345794392523364,
+        "rev": "workspace",
+        "threshold": 0.64
+    }
+]
+    },
+    "title": "",
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "index",
+            "type": "quantitative",
+            "title": "index"
+        },
+        "y": {
+            "field": "threshold",
+            "type": "quantitative",
+            "title": "threshold",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+    vegaEmbed('#plot0', spec);
+</script>
+</body>
+</html>
