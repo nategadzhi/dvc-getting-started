@@ -26,3 +26,17 @@ featurize:
   outs:
   - path: data/features
     md5: 2b5e0fdd787b569b4fcb4bafa543d270.dir
+train:
+  cmd: pipenv run python src/train.py data/features model.pkl
+  deps:
+  - path: data/features
+    md5: 2b5e0fdd787b569b4fcb4bafa543d270.dir
+  - path: src/train.py
+    md5: ad8e71b2cca4334a7d3bb6495645068c
+  params:
+    params.yaml:
+      train.n_estimators: 50
+      train.seed: 20170428
+  outs:
+  - path: model.pkl
+    md5: 9ea377f66c1efbfb976462285352a3d6
